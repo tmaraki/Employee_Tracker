@@ -26,14 +26,14 @@ VALUES
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
-('Tom', 'Brady', 1, 1),
-('Thomas', 'The Tank Engine', 2, 2),
-('Thomas', 'Calle', 3, 3),
-('Thomas', 'Shelby', 4, 4),
-('Thomas', 'Hobbes', 5, 5),
-('Tom', 'Hanks', 6, 6),
-('Tom', 'Holland', 7, 7),
-('Tom', 'Ford', 8, 8),
-('Thomas', 'The Apostle', 9, 9),
-('Tom', 'Cruise', 10, 10);
+('Daenerys', 'Targary', 1, 1),
+('Jon', 'Snow', 2, 2),
+('Sansa', 'Stark', 3, 3),
+('Arya', 'Stark', 4, 4),
+('Cersi', 'Lannister', 5, 5),
+('Tyrion', 'Lannister', 6, 6),
+('Khal', 'Drogo', 7, 7),
+('Margaery', 'Tyrell', 8, 8),
+('Melisandre', 'The Red Woman', 9, 9),
+('The Night King', 'White Walkers', 10, 10);
 

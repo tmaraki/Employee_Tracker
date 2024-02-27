@@ -1,5 +1,5 @@
-SELECT department.department_name AS department, reviews.review
-FROM 
-LEFT JOIN department
-ON reviews.department_id = department.id
+SELECT departments.department_name AS department, employee*
+FROM departments
+LEFT JOIN employee
+ON employee.department_id = departments.id
 ORDER BY departments.department_name;

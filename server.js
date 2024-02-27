@@ -5,9 +5,9 @@ const mysql = require("mysql2");
 //mysql connection
 const connection = mysql.createConnection({
     host: "localhost",
-    port: 3001,
+    port: 3306,
     user: "root",
-    password: "",
+    password: "tosh",
     database: "employeeTracker_db",
 });
 
@@ -155,27 +155,32 @@ function addRole() {
                 },
             ])
             .then((answers) => {
+                // Convert salary to numeric format (remove commas)
+                const numericSalary = parseFloat(answers.salary.replace(/,/g, ''));
+            
                 const department = res.find(
-                    (department) => department.name === answers.department
+                    (dept) => dept.department_name === answers.department
                 );
+            
                 const query = "INSERT INTO roles SET ?";
                 connection.query(
                     query,
                     {
                         title: answers.title,
-                        salary: answers.salary,
-                        department_id: department,
+                        salary: numericSalary,
+                        department_id: department.id,
                     },
                     (err, res) => {
                         if (err) throw err;
                         console.log(
-                            `Added role ${answers.title} with salary ${answers.salary} to the ${answers.department} department in the database!`
+                            `Added role ${answers.title} with salary ${numericSalary} to the ${answers.department} department in the database!`
                         );
                         // restart the application
                         start();
                     }
                 );
             });
+            
     });
 }
 

@@ -33,7 +33,7 @@ Welcome to my SQL employee database tracker where users can easily view and inte
 
 ### <ins>Installation Instructions & Process<ins>
 ### Instructions
-Before initiating the application, be sure to install inquirer and mysql2@8.2.4. The mysql version is a requirement for this application to run properly.
+Before initiating the application, be sure to install inquirer and mysql2@8.2.4, and run all three sql files. The mysql version is a requirement for this application to run properly.
 ### Process
     1. Clone or download the zip folder of the repo: [Toshie's Employee_Tracker Repo](https://github.com/tmaraki/Employee_Tracker/tree/main)
     2. Install the following:
@@ -45,12 +45,17 @@ Before initiating the application, be sure to install inquirer and mysql2@8.2.4.
 ### <ins>Usage Instructions<ins>
     1. Open the Content Management System named Employee_Tracker
     2. Open the 'Integrated Terminal' on the 'server.js' file
-    3. Type the command 'node server.js'
+    3. Initialize the application! In the integrated terminal, type the command 'node server.js'
     4. Use the 'UP' and 'DOWN' arrows to navigate, and 'ENTER' to select an option
     5. Follow the command-line prompts until you have your desired output
 
-### <ins>Walkthrough Video<ins>
+If you run into error messages, you may need to log into Mysql and run all three sql files:
+    1. Log into Mysql using command 'mysql -u root -p'
+    2. Run all three sql files using command 'SOURCE db/schema.sql', 'SOURCE db/seeds.sql', and 'SOURCE db/   query.sql'
+    3. Exit mysql by typing 'exit'
 
+### <ins>Walkthrough Video<ins>
+[Click Here](https://drive.google.com/file/d/12sTHu8Eo5lpIcp1F46UmDhcRV--8Hf0r/view?usp=sharing) for a walkthrough video. 
 
 ### <ins>Repository Link<ins>
-
+[Toshie's Github Repository for Employee_Tracker](https://github.com/tmaraki/Employee_Tracker/tree/main)

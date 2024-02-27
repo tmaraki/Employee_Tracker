@@ -74,3 +74,11 @@ If you run into error messages, you may need to log into Mysql and run all three
 
 ### <ins>Repository Link<ins>
 [Toshie's Github Repository for Employee_Tracker](https://github.com/tmaraki/Employee_Tracker/tree/main)
+
+### <ins>References<ins>
+W3Schools: [MySQL Tutorial](https://www.w3schools.com/MySQL/default.asp)
+Xpert Learning Assistant: Student Resource through Bootcamp Program
+MySQL Tutorial: [Website Linked Here](https://www.mysqltutorial.org/mysql-stored-procedure/)
+
+### <ins>Feedback<ins>
+For any questions, comments or feedback, feel free to email me at toshiemaraki@gmail.com
